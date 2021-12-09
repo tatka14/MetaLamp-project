@@ -1,0 +1,82 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  color: rgba(31, 32, 65, 0.5);
+}
+
+body {
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+ul,
+p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+.nav-bar .logo {
+  height: 40px;
+  margin-right: 285px;
+}
+
+.headerMenu {
+  display: flex;
+}
+
+.headerMenu li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.drop-down-list:after {
+  content: ">";
+  transform: rotate(90deg);
+}
+
+.btn {
+  background: #FFFFFF;
+  color: #BC9CFF;
+  padding: 10px 20px;
+  border-radius: 22px;
+  border: solid 2px;
+  border-color: linear-gradient(#bc9cff, #8ba4f9), linear-gradient(to bottom, #BC9CFF, #8BA4F9);
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn-login {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: #FFFFFF;
+}
+
+.footerMenuCols {
+  display: flex;
+  font-size: 14px;
+}
+
+.footerCol span {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1F2041;
+}
+.footerCol p {
+  width: 260px;
+  padding-right: 40px;
+}
+
+.footer {
+  border-top: 1px solid #E5E5E5;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
