@@ -4,48 +4,73 @@ html(lang="ru")
   head
     link(rel="stylesheet", href="styles.css")
     script(src="../js/main.js")
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic")
+    link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
   body
+  .content
     header 
       nav.nav-bar
         img(src="../img/logo.png", alt="", class="logo")
-        ul.headerMenu
-          li О нас
-          li.drop-down-list Услуги
-          li Вакансии
-          li Новости
-          li Соглашения
-        button.btn Войти
-        button.btn.btn-login Зарегистрироваться
-    footer
+        div
+          ul.headerMenu
+            li
+              a(href="http://") О нас 
+            li
+              a(href="http://") Услуги
+                i.fa.fa-angle-down.fa-lg
+            li
+              a(href="http://") Вакансии
+            li
+              a(href="http://") Новости
+            li
+              a(href="http://") Соглашения
+                i.fa.fa-angle-down.fa-lg
+          button.btn Войти
+          button.btn.btn-login Зарегистрироваться
       .footerMenuCols
-        .footerCol
-          img(src="../img/logo.png", alt="", class="logo")
-          p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-        .footerCol
-          span Навигация
-          ul.footerMenu 
-            li О нас
-            li Новости
-            li Служба поддержки
-            li Услуги 
-        .footerCol
-          span О нас
-          ul.footerMenu 
-            li О сервисе
-            li Наша команда
-            li Вакансии
-            li Инвесторы  
-        .footerCol 
-          span Служба поддержки
-          ul.footerMenu 
-            li Соглашения
-            li Сообщества
-            li Связь с нами
-        .footerCol
-          span Подписка
-          p Получайте специальные предложения и новости сервиса
-          input(type="email")
+        .footerContent 
+          .footerCol
+            img(src="../img/logo.png", alt="", class="logo")
+            p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+          .footerCol
+            ul.footerMenu 
+              li Навигация
+              li
+                a(href="http://") О нас
+              li
+                a(href="http://") Новости
+              li
+                a(href="http://") Служба поддержки
+              li
+                a(href="http://") Услуги 
+          .footerCol
+            ul.footerMenu 
+              li О нас
+              li 
+                a(href="http://") О сервисе
+              li 
+                a(href="http://") Наша команда
+              li 
+                a(href="http://") Вакансии
+              li 
+                a(href="http://") Инвесторы  
+          .footerCol 
+            ul.footerMenu 
+              li Служба поддержки  
+              li 
+                a(href="http://") Соглашения
+              li 
+                a(href="http://") Сообщества
+              li 
+                a(href="http://") Связь с нами
+          .footerCol
+            .footerMenu
+              p Подписка
+              p Получайте специальные предложения и новости сервиса
+              input(type="text" class="input-subscribe" placeholder="Email")
+    footer
       .footer
         span Copyright © 2018 Toxin отель. Все права защищены.
         .icons
+          i.fa.fa-twitter
+          i.fa.fa-instagram
+          i.fa.fa-facebook

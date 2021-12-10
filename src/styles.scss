@@ -1,31 +1,44 @@
-$top-color: red;
+$main-font: "Montserrat";
+$main-font-size: 14px;
+$main-font-color: rgba(31, 32, 65, 0.5);
 html,
 body {
     margin: 0;
     padding: 0;
-    font-family: "Montserrat";
+    font-family: $main-font;
     color: rgba(31, 32, 65, 0.5);
-}
-
-body {
-    padding-left: 140px;
-    padding-right: 140px;
+    font-size: 14px;
 }
 
 ul,
-p {
+p,
+a {
     list-style: none;
     padding: 0;
     margin: 0;
+    color: $main-font-color;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: normal;
+}
+
+.content {
+    padding-left: 140px;
+    padding-right: 140px;
 }
 
 .nav-bar {
     display: flex;
     align-items: center;
     height: 70px;
+    justify-content: space-between;
     .logo {
         height: 40px;
         margin-right: 285px;
+    }
+    div {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -36,6 +49,10 @@ p {
 .headerMenu li {
     padding-left: 20px;
     padding-right: 20px;
+    i {
+        padding-left: 5px;
+        font-weight: 400;
+    }
 }
 
 .drop-down-list:after {
@@ -61,17 +78,28 @@ p {
     color: #FFFFFF;
 }
 
-.footerMenuCols {
+.footerContent {
     display: flex;
     font-size: 14px;
+    justify-content: space-between;
+}
+
+.footerMenu {
+    li:first-of-type {
+        font-weight: 700;
+        color: #1F2041;
+        text-transform: uppercase;
+    }
+    li {
+        line-height: 2.5;
+    }
+    span {
+        line-height: 2.5;
+    }
 }
 
 .footerCol {
-    span {
-        text-transform: uppercase;
-        font-weight: 700;
-        color: #1F2041;
-    }
+    line-height: 24px;
     p {
         width: 260px;
         padding-right: 40px;
@@ -82,4 +110,32 @@ p {
     border-top: 1px solid #E5E5E5;
     padding-top: 26px;
     padding-bottom: 26px;
+    display: flex;
+    justify-content: space-between;
+    .icons {
+        .fa {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.input-subscribe {
+    width: 260px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    margin-top: 20px;
+     ::placeholder {
+        font-family: $main-font;
+        font-size: $main-font-size;
+    }
+}
+
+@media (max-width: 1366px) {
+    .content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }

@@ -3,58 +3,69 @@
   <head>
     <link rel="stylesheet" href="styles.css"/>
     <script src="../js/main.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&amp;display=swap&amp;subset=cyrillic"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
   </head>
-  <body>
+  <body></body>
+  <div class="content">
     <header> 
       <nav class="nav-bar"><img class="logo" src="../img/logo.png" alt=""/>
-        <ul class="headerMenu">
-          <li>О нас</li>
-          <li class="drop-down-list">Услуги</li>
-          <li>Вакансии</li>
-          <li>Новости</li>
-          <li>Соглашения</li>
-        </ul>
-        <button class="btn">Войти</button>
-        <button class="btn btn-login">Зарегистрироваться</button>
+        <div>
+          <ul class="headerMenu">
+            <li><a href="http://">О нас </a></li>
+            <li><a href="http://">Услуги<i class="fa fa-angle-down fa-lg"></i></a></li>
+            <li><a href="http://">Вакансии</a></li>
+            <li><a href="http://">Новости</a></li>
+            <li><a href="http://">Соглашения<i class="fa fa-angle-down fa-lg"></i></a></li>
+          </ul>
+          <button class="btn">Войти</button>
+          <button class="btn btn-login">Зарегистрироваться</button>
+        </div>
       </nav>
+      <div class="footerMenuCols">
+        <div class="footerContent"> 
+          <div class="footerCol"><img class="logo" src="../img/logo.png" alt=""/>
+            <p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+          </div>
+          <div class="footerCol">
+            <ul class="footerMenu"> 
+              <li>Навигация</li>
+              <li><a href="http://">О нас</a></li>
+              <li><a href="http://">Новости</a></li>
+              <li><a href="http://">Служба поддержки</a></li>
+              <li><a href="http://">Услуги </a></li>
+            </ul>
+          </div>
+          <div class="footerCol">
+            <ul class="footerMenu"> 
+              <li>О нас</li>
+              <li> <a href="http://">О сервисе</a></li>
+              <li> <a href="http://">Наша команда</a></li>
+              <li> <a href="http://">Вакансии</a></li>
+              <li> <a href="http://">Инвесторы  </a></li>
+            </ul>
+          </div>
+          <div class="footerCol"> 
+            <ul class="footerMenu"> 
+              <li>Служба поддержки  </li>
+              <li> <a href="http://">Соглашения</a></li>
+              <li> <a href="http://">Сообщества</a></li>
+              <li> <a href="http://">Связь с нами</a></li>
+            </ul>
+          </div>
+          <div class="footerCol">
+            <div class="footerMenu">
+              <p>Подписка</p>
+              <p>Получайте специальные предложения и новости сервиса</p>
+              <input class="input-subscribe" type="text" placeholder="Email"/>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <footer>
-      <div class="footerMenuCols">
-        <div class="footerCol"><img class="logo" src="../img/logo.png" alt=""/>
-          <p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
-        </div>
-        <div class="footerCol"><span>Навигация</span>
-          <ul class="footerMenu"> 
-            <li>О нас</li>
-            <li>Новости</li>
-            <li>Служба поддержки</li>
-            <li>Услуги </li>
-          </ul>
-        </div>
-        <div class="footerCol"><span>О нас</span>
-          <ul class="footerMenu"> 
-            <li>О сервисе</li>
-            <li>Наша команда</li>
-            <li>Вакансии</li>
-            <li>Инвесторы  </li>
-          </ul>
-        </div>
-        <div class="footerCol"> <span>Служба поддержки</span>
-          <ul class="footerMenu"> 
-            <li>Соглашения</li>
-            <li>Сообщества</li>
-            <li>Связь с нами</li>
-          </ul>
-        </div>
-        <div class="footerCol"><span>Подписка</span>
-          <p>Получайте специальные предложения и новости сервиса</p>
-          <input type="email"/>
-        </div>
-      </div>
       <div class="footer"><span>Copyright © 2018 Toxin отель. Все права защищены.</span>
-        <div class="icons"></div>
+        <div class="icons"><i class="fa fa-twitter"></i><i class="fa fa-instagram"></i><i class="fa fa-facebook"></i></div>
       </div>
     </footer>
-  </body>
+  </div>
 </html>
